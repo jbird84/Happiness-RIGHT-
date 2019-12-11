@@ -13,6 +13,7 @@
 		DA0374B723A02C3A00C394D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0374B523A02C3A00C394D0 /* Main.storyboard */; };
 		DA0374B923A02C4300C394D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0374B823A02C4300C394D0 /* Assets.xcassets */; };
 		DA0374BC23A02C4300C394D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0374BA23A02C4300C394D0 /* LaunchScreen.storyboard */; };
+		DA4DC30623A064B500ADF9CC /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DC30523A064B500ADF9CC /* StartScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DA0374B823A02C4300C394D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0374BB23A02C4300C394D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0374BD23A02C4300C394D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4DC30523A064B500ADF9CC /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DA0374B823A02C4300C394D0 /* Assets.xcassets */,
 				DA0374BA23A02C4300C394D0 /* LaunchScreen.storyboard */,
 				DA0374BD23A02C4300C394D0 /* Info.plist */,
+				DA4DC30523A064B500ADF9CC /* StartScreenViewController.swift */,
 			);
 			path = "Happiness RIGHT?";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				DA0374B423A02C3A00C394D0 /* ViewController.swift in Sources */,
 				DA0374B023A02C3A00C394D0 /* AppDelegate.swift in Sources */,
 				DA0374B223A02C3A00C394D0 /* SceneDelegate.swift in Sources */,
+				DA4DC30623A064B500ADF9CC /* StartScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
