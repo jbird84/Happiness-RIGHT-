@@ -26,17 +26,23 @@ class ViewController: UIViewController {
     
     
     var timer = Timer()
+    var hideTimer = Timer()
     var counter = 0
     var score = 0
+    var fiveDollarBillArray = [UIImageView]()
     
     
     override func viewWillAppear(_ animated: Bool) {
         
+        fiveDollarBillArray =
+            [fiveDollarBillOne, fiveDollarBillTwo, fiveDollarBillThree, fiveDollarBillFour, fiveDollarBillFive, fiveDollarBillSix, fiveDollarBillSeven]
         counter = 15
         timerLabel.text = "Time: \(counter)"
         happinessLabel.text = "Happiness: \(score)"
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFunction), userInfo: nil, repeats: true)
+        hideTimer = Timer.scheduledTimer(timeInterval: 0.44, target: self, selector: #selector(hideFiveDollarBills), userInfo: nil, repeats: true)
         
+        //this allows each UIImageView to be tapped.
         fiveDollarBillOne.isUserInteractionEnabled = true
         fiveDollarBillTwo.isUserInteractionEnabled = true
         fiveDollarBillThree.isUserInteractionEnabled = true
@@ -54,6 +60,7 @@ class ViewController: UIViewController {
          let recognizer6 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
          let recognizer7 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
         
+        //this sets each tap-gesture to a UIImageView
         fiveDollarBillOne.addGestureRecognizer(recognizer1)
         fiveDollarBillTwo.addGestureRecognizer(recognizer2)
         fiveDollarBillThree.addGestureRecognizer(recognizer3)
@@ -61,6 +68,9 @@ class ViewController: UIViewController {
         fiveDollarBillFive.addGestureRecognizer(recognizer5)
         fiveDollarBillSix.addGestureRecognizer(recognizer6)
         fiveDollarBillSeven.addGestureRecognizer(recognizer7)
+        
+        //this hides ALL UIImageViews when view loads
+        hideFiveDollarBills()
     }
     
     
@@ -88,11 +98,26 @@ class ViewController: UIViewController {
         
         if counter <= -1 {
             timer.invalidate()
+            hideTimer.invalidate()
             timerLabel.text = "Time Ended"
             counter = 0
             score = 0
             lifeOverAlert()
         }
+    }
+    
+    
+    
+    
+    //this func goes through the fiveDollarBillArray and sets each UIImageView to .isHidden this prevents the user from being able to access them.
+   @objc func hideFiveDollarBills() {
+        for image in fiveDollarBillArray {
+            image.isHidden = true
+        }
+        
+        fiveDollarBillArray.randomElement()?.isHidden = false
+      
+        
     }
     
     

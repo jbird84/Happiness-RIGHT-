@@ -35,6 +35,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <state key="normal" image="info.circle" catalog="system"/>
+                                <connections>
+                                    <segue destination="LaR-DK-CFJ" kind="popoverPresentation" popoverAnchorView="km2-kU-BFz" id="ub0-3e-xf8">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,6 +61,21 @@
                 <exit id="VC5-Hi-Oeq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-781.15942028985512" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rdo-tv-RdR">
+            <objects>
+                <viewController id="LaR-DK-CFJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d7E-gq-Ydf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7xG-Ro-F3a"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P29-5r-waI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-402" y="818"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -84,48 +104,48 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F0b-do-Pp0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="FiveDollarBill" translatesAutoresizingMaskIntoConstraints="NO" id="F0b-do-Pp0">
                                 <rect key="frame" x="20" y="564" width="141" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="5FD-4g-B5U"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pqc-mT-XfQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="FiveDollarBill" translatesAutoresizingMaskIntoConstraints="NO" id="pqc-mT-XfQ">
                                 <rect key="frame" x="266" y="618" width="128" height="103"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="103" id="mmy-uM-cYC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HighScore:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwC-it-4ev">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HighScore:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwC-it-4ev">
                                 <rect key="frame" x="20" y="730" width="374" height="27"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAh-nO-C9B">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FiveDollarBill" translatesAutoresizingMaskIntoConstraints="NO" id="BAh-nO-C9B">
                                 <rect key="frame" x="43" y="357" width="141" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="3Xp-Xt-p8b"/>
                                     <constraint firstAttribute="width" constant="141" id="JvG-hA-N0G"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8oz-PD-lxg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FiveDollarBill" translatesAutoresizingMaskIntoConstraints="NO" id="8oz-PD-lxg">
                                 <rect key="frame" x="20" y="211" width="141" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="141" id="BiF-pk-32M"/>
                                     <constraint firstAttribute="height" constant="128" id="kmZ-ZA-SFG"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0MO-LP-kYM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FiveDollarBill" translatesAutoresizingMaskIntoConstraints="NO" id="0MO-LP-kYM">
                                 <rect key="frame" x="228" y="211" width="141" height="128"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ydX-Mf-sr2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="FiveDollarBill" translatesAutoresizingMaskIntoConstraints="NO" id="ydX-Mf-sr2">
                                 <rect key="frame" x="169" y="493" width="136" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="Cfo-ff-noG"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ri3-wK-R6a">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FiveDollarBill" translatesAutoresizingMaskIntoConstraints="NO" id="ri3-wK-R6a">
                                 <rect key="frame" x="253" y="347" width="141" height="128"/>
                             </imageView>
                         </subviews>
@@ -184,6 +204,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FiveDollarBill" width="758" height="744"/>
         <image name="info.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>
