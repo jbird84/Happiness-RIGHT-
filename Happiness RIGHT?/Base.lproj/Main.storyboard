@@ -69,7 +69,69 @@
                     <view key="view" contentMode="scaleToFill" id="d7E-gq-Ydf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIL-GF-ShO">
+                                <rect key="frame" x="118" y="59" width="178" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="On the startup screen press        &quot;START&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yCI-VY-mvU">
+                                <rect key="frame" x="20" y="141" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MX0-Bi-tMM"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Try to tap on the 5 as much as you can before time runs out. Try again and agin to beat your highscore. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zbb-i9-nvj">
+                                <rect key="frame" x="20" y="476" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="IVy-km-ojk"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Like in life, the more money collected the less happy you are. You will notice the highest score is actualy QUITE low. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gt9-0i-bgB">
+                                <rect key="frame" x="154" y="635" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The timer will count down from 15 and you will notice a 5 dollar bill bouncing around. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zKY-5M-H5A">
+                                <rect key="frame" x="154" y="313" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MbK-Jf-w8c"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zKY-5M-H5A" firstAttribute="trailing" secondItem="d7E-gq-Ydf" secondAttribute="trailingMargin" id="4bj-Dl-BBS"/>
+                            <constraint firstItem="7xG-Ro-F3a" firstAttribute="bottom" secondItem="Gt9-0i-bgB" secondAttribute="bottom" constant="45" id="5CI-Vm-XgV"/>
+                            <constraint firstItem="yCI-VY-mvU" firstAttribute="top" secondItem="TIL-GF-ShO" secondAttribute="bottom" constant="41" id="J2V-QN-21E"/>
+                            <constraint firstItem="Gt9-0i-bgB" firstAttribute="top" secondItem="zbb-i9-nvj" secondAttribute="bottom" constant="31" id="OyB-pN-Lfu"/>
+                            <constraint firstItem="zbb-i9-nvj" firstAttribute="top" secondItem="zKY-5M-H5A" secondAttribute="bottom" constant="35" id="Sva-bX-0Nb"/>
+                            <constraint firstItem="zKY-5M-H5A" firstAttribute="leading" secondItem="7xG-Ro-F3a" secondAttribute="leading" constant="154" id="VRh-9i-1LC"/>
+                            <constraint firstItem="zKY-5M-H5A" firstAttribute="leading" secondItem="Gt9-0i-bgB" secondAttribute="leading" id="YPU-NQ-UxC"/>
+                            <constraint firstItem="yCI-VY-mvU" firstAttribute="leading" secondItem="d7E-gq-Ydf" secondAttribute="leadingMargin" id="efn-ud-xUv"/>
+                            <constraint firstItem="7xG-Ro-F3a" firstAttribute="trailing" secondItem="yCI-VY-mvU" secondAttribute="trailing" constant="154" id="j9T-gO-uFe"/>
+                            <constraint firstItem="TIL-GF-ShO" firstAttribute="top" secondItem="7xG-Ro-F3a" secondAttribute="top" constant="59" id="leP-Wl-CXO"/>
+                            <constraint firstItem="zKY-5M-H5A" firstAttribute="trailing" secondItem="Gt9-0i-bgB" secondAttribute="trailing" id="nD2-Hz-oIP"/>
+                            <constraint firstItem="TIL-GF-ShO" firstAttribute="centerX" secondItem="d7E-gq-Ydf" secondAttribute="centerX" id="pu1-O5-zb1"/>
+                            <constraint firstItem="yCI-VY-mvU" firstAttribute="trailing" secondItem="zbb-i9-nvj" secondAttribute="trailing" id="vN0-Fd-1BX"/>
+                            <constraint firstItem="zKY-5M-H5A" firstAttribute="top" secondItem="yCI-VY-mvU" secondAttribute="bottom" constant="44" id="vzO-Ig-nFA"/>
+                            <constraint firstItem="yCI-VY-mvU" firstAttribute="leading" secondItem="zbb-i9-nvj" secondAttribute="leading" id="w0H-Lf-a4S"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7xG-Ro-F3a"/>
                     </view>
                 </viewController>
