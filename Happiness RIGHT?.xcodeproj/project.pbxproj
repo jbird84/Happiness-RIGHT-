@@ -14,6 +14,7 @@
 		DA0374B923A02C4300C394D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0374B823A02C4300C394D0 /* Assets.xcassets */; };
 		DA0374BC23A02C4300C394D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0374BA23A02C4300C394D0 /* LaunchScreen.storyboard */; };
 		DA4DC30623A064B500ADF9CC /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DC30523A064B500ADF9CC /* StartScreenViewController.swift */; };
+		DABC2E4223A7245800B67351 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC2E4123A7245800B67351 /* HowToPlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DA0374BB23A02C4300C394D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0374BD23A02C4300C394D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4DC30523A064B500ADF9CC /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		DABC2E4123A7245800B67351 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				DA0374BA23A02C4300C394D0 /* LaunchScreen.storyboard */,
 				DA0374BD23A02C4300C394D0 /* Info.plist */,
 				DA4DC30523A064B500ADF9CC /* StartScreenViewController.swift */,
+				DABC2E4123A7245800B67351 /* HowToPlayViewController.swift */,
 			);
 			path = "Happiness RIGHT?";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				DA0374B023A02C3A00C394D0 /* AppDelegate.swift in Sources */,
 				DA0374B223A02C3A00C394D0 /* SceneDelegate.swift in Sources */,
 				DA4DC30623A064B500ADF9CC /* StartScreenViewController.swift in Sources */,
+				DABC2E4223A7245800B67351 /* HowToPlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
