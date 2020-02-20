@@ -25,7 +25,7 @@ class HowToPlayViewController: UIViewController {
     @IBOutlet weak var textView4: UITextView!
     
     
-    func shapeTheTextView(textView: UITextView, bgColor: UIColor) {
+    func shapeTheTextView(textView: UITextView, bgColor: UIColor, borderColor: CGColor) {
         
         textView.backgroundColor = bgColor
         textView.textColor = #colorLiteral(red: 0.8287954694, green: 0.9360667253, blue: 1, alpha: 1)
@@ -34,9 +34,14 @@ class HowToPlayViewController: UIViewController {
         
         //Create a shadow for the TextView
         textView.layer.cornerRadius = textView.frame.size.height/2
+        textView.layer.borderWidth = 2
+        textView.layer.cornerRadius = 10
+        textView.layer.borderColor = borderColor
         textView.clipsToBounds = true
         textView.layer.shadowOpacity = 0.4
         textView.layer.shadowOffset = CGSize(width: 2, height: 2)
+        textView.adjustsFontForContentSizeCategory = true
+        
     }
     
 }

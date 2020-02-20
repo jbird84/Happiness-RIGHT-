@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jjl-zS-Nsv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jjl-zS-Nsv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -166,7 +166,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happiness:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCP-jr-hPf">
                                 <rect key="frame" x="20" y="177" width="374" height="26.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26.5" id="idX-gO-KGS"/>
+                                    <constraint firstAttribute="height" constant="26.5" id="0Ty-73-9Up"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
@@ -219,33 +219,33 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="OCP-jr-hPf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="077-UW-MUA"/>
                             <constraint firstItem="pqc-mT-XfQ" firstAttribute="top" secondItem="ydX-Mf-sr2" secondAttribute="bottom" constant="8" id="1oG-SU-vcZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ri3-wK-R6a" secondAttribute="trailing" constant="20" id="7Ry-oR-J9q"/>
                             <constraint firstItem="BAh-nO-C9B" firstAttribute="top" secondItem="8oz-PD-lxg" secondAttribute="bottom" constant="18" id="8lO-hd-mlC"/>
                             <constraint firstItem="ri3-wK-R6a" firstAttribute="top" secondItem="0MO-LP-kYM" secondAttribute="bottom" constant="8" id="DD1-Yl-9TW"/>
+                            <constraint firstItem="OCP-jr-hPf" firstAttribute="leading" secondItem="F0b-do-Pp0" secondAttribute="leading" id="E0D-Ha-8QW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hwC-it-4ev" secondAttribute="bottom" constant="51" id="EEL-Th-tBJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ydX-Mf-sr2" secondAttribute="trailing" constant="109" id="ETT-Y5-fXt"/>
                             <constraint firstItem="pqc-mT-XfQ" firstAttribute="trailing" secondItem="hwC-it-4ev" secondAttribute="trailing" id="FFX-N8-0JI"/>
                             <constraint firstItem="pqc-mT-XfQ" firstAttribute="leading" secondItem="ri3-wK-R6a" secondAttribute="leading" constant="13" id="IvP-80-Oyv"/>
                             <constraint firstItem="0MO-LP-kYM" firstAttribute="leading" secondItem="8oz-PD-lxg" secondAttribute="trailing" constant="67" id="K0X-6X-tI6"/>
-                            <constraint firstItem="OCP-jr-hPf" firstAttribute="top" secondItem="dIi-oa-3Tn" secondAttribute="bottom" constant="25" id="KZH-hN-7WQ"/>
                             <constraint firstItem="BAh-nO-C9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="M2S-I2-XEc"/>
                             <constraint firstItem="dIi-oa-3Tn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="MEh-DP-O8Z"/>
                             <constraint firstItem="8oz-PD-lxg" firstAttribute="bottom" secondItem="0MO-LP-kYM" secondAttribute="bottom" id="QdK-Oi-dEa"/>
-                            <constraint firstItem="8oz-PD-lxg" firstAttribute="top" secondItem="OCP-jr-hPf" secondAttribute="bottom" constant="51.5" id="Rc8-0d-XzK"/>
-                            <constraint firstItem="OCP-jr-hPf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SGo-2I-IhX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0MO-LP-kYM" secondAttribute="trailing" constant="45" id="SY7-xx-AXp"/>
                             <constraint firstItem="hwC-it-4ev" firstAttribute="top" secondItem="F0b-do-Pp0" secondAttribute="bottom" constant="38" id="SYD-TL-IDF"/>
                             <constraint firstItem="8oz-PD-lxg" firstAttribute="top" secondItem="0MO-LP-kYM" secondAttribute="top" id="WhC-bb-wnl"/>
-                            <constraint firstItem="dIi-oa-3Tn" firstAttribute="centerX" secondItem="OCP-jr-hPf" secondAttribute="centerX" id="Xyt-qH-Rv9"/>
                             <constraint firstItem="ydX-Mf-sr2" firstAttribute="top" secondItem="BAh-nO-C9B" secondAttribute="bottom" constant="8" id="YiU-2M-tPE"/>
                             <constraint firstItem="ydX-Mf-sr2" firstAttribute="leading" secondItem="F0b-do-Pp0" secondAttribute="trailing" constant="8" id="YxQ-ru-dAc"/>
-                            <constraint firstItem="pqc-mT-XfQ" firstAttribute="trailing" secondItem="OCP-jr-hPf" secondAttribute="trailing" id="jj6-Do-zQb"/>
+                            <constraint firstItem="8oz-PD-lxg" firstAttribute="top" secondItem="OCP-jr-hPf" secondAttribute="bottom" constant="51.5" id="ZO1-Jt-gBe"/>
+                            <constraint firstItem="OCP-jr-hPf" firstAttribute="leading" secondItem="dIi-oa-3Tn" secondAttribute="leading" id="aRD-cS-ZKa"/>
+                            <constraint firstItem="OCP-jr-hPf" firstAttribute="trailing" secondItem="pqc-mT-XfQ" secondAttribute="trailing" id="hZT-pq-kdK"/>
+                            <constraint firstItem="OCP-jr-hPf" firstAttribute="top" secondItem="dIi-oa-3Tn" secondAttribute="bottom" constant="25" id="hia-bp-acX"/>
                             <constraint firstItem="ydX-Mf-sr2" firstAttribute="top" secondItem="ri3-wK-R6a" secondAttribute="bottom" constant="18" id="lKB-xV-rWK"/>
+                            <constraint firstItem="OCP-jr-hPf" firstAttribute="trailing" secondItem="dIi-oa-3Tn" secondAttribute="trailing" id="onZ-dD-fjs"/>
                             <constraint firstItem="ri3-wK-R6a" firstAttribute="leading" secondItem="BAh-nO-C9B" secondAttribute="trailing" constant="69" id="qOo-qu-0iz"/>
+                            <constraint firstItem="OCP-jr-hPf" firstAttribute="leading" secondItem="8oz-PD-lxg" secondAttribute="leading" id="r2P-No-8ss"/>
                             <constraint firstItem="hwC-it-4ev" firstAttribute="leading" secondItem="F0b-do-Pp0" secondAttribute="leading" id="sIM-wh-5Bq"/>
-                            <constraint firstItem="OCP-jr-hPf" firstAttribute="leading" secondItem="F0b-do-Pp0" secondAttribute="leading" id="tt3-rD-2e9"/>
                             <constraint firstItem="hwC-it-4ev" firstAttribute="top" secondItem="pqc-mT-XfQ" secondAttribute="bottom" constant="9" id="u0J-ae-fK5"/>
                             <constraint firstItem="8oz-PD-lxg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ygC-86-rdw"/>
                         </constraints>

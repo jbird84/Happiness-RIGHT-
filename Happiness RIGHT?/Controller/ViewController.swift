@@ -48,46 +48,44 @@ class ViewController: UIViewController {
             highScoreLabel.text = "Highscore: \(highScore)"
         }
         
-          fiveDollarBillArray =
-                  [fiveDollarBillOne, fiveDollarBillTwo, fiveDollarBillThree, fiveDollarBillFour, fiveDollarBillFive, fiveDollarBillSix, fiveDollarBillSeven]
-              counter = 15
-              timerLabel.text = "Time: \(counter)"
-              happinessLabel.text = "Happiness: \(score)"
-              timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFunction), userInfo: nil, repeats: true)
-              hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(hideFiveDollarBills), userInfo: nil, repeats: true)
-              
-              //this allows each UIImageView to be tapped.
-              fiveDollarBillOne.isUserInteractionEnabled = true
-              fiveDollarBillTwo.isUserInteractionEnabled = true
-              fiveDollarBillThree.isUserInteractionEnabled = true
-              fiveDollarBillFour.isUserInteractionEnabled = true
-              fiveDollarBillFive.isUserInteractionEnabled = true
-              fiveDollarBillSix.isUserInteractionEnabled = true
-              fiveDollarBillSeven.isUserInteractionEnabled = true
-              
-              //sets-up the tap-gesture
-              let recognizer1 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
-               let recognizer2 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
-               let recognizer3 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
-               let recognizer4 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
-               let recognizer5 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
-               let recognizer6 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
-               let recognizer7 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
-              
-              //this sets each tap-gesture to a UIImageView
-              fiveDollarBillOne.addGestureRecognizer(recognizer1)
-              fiveDollarBillTwo.addGestureRecognizer(recognizer2)
-              fiveDollarBillThree.addGestureRecognizer(recognizer3)
-              fiveDollarBillFour.addGestureRecognizer(recognizer4)
-              fiveDollarBillFive.addGestureRecognizer(recognizer5)
-              fiveDollarBillSix.addGestureRecognizer(recognizer6)
-              fiveDollarBillSeven.addGestureRecognizer(recognizer7)
-              
-              //this hides ALL UIImageViews when view loads
-              hideFiveDollarBills()
+        fiveDollarBillArray =
+            [fiveDollarBillOne, fiveDollarBillTwo, fiveDollarBillThree, fiveDollarBillFour, fiveDollarBillFive, fiveDollarBillSix, fiveDollarBillSeven]
+        counter = 15
+        timerLabel.text = "Time: \(counter)"
+        happinessLabel.text = "Happiness: \(score)"
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFunction), userInfo: nil, repeats: true)
+        hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(hideFiveDollarBills), userInfo: nil, repeats: true)
+        
+        //this allows each UIImageView to be tapped.
+        fiveDollarBillOne.isUserInteractionEnabled = true
+        fiveDollarBillTwo.isUserInteractionEnabled = true
+        fiveDollarBillThree.isUserInteractionEnabled = true
+        fiveDollarBillFour.isUserInteractionEnabled = true
+        fiveDollarBillFive.isUserInteractionEnabled = true
+        fiveDollarBillSix.isUserInteractionEnabled = true
+        fiveDollarBillSeven.isUserInteractionEnabled = true
+        
+        //sets-up the tap-gesture
+        let recognizer1 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
+        let recognizer2 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
+        let recognizer3 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
+        let recognizer4 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
+        let recognizer5 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
+        let recognizer6 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
+        let recognizer7 = UITapGestureRecognizer(target: self, action: #selector(decreaseHappiness))
+        
+        //this sets each tap-gesture to a UIImageView
+        fiveDollarBillOne.addGestureRecognizer(recognizer1)
+        fiveDollarBillTwo.addGestureRecognizer(recognizer2)
+        fiveDollarBillThree.addGestureRecognizer(recognizer3)
+        fiveDollarBillFour.addGestureRecognizer(recognizer4)
+        fiveDollarBillFive.addGestureRecognizer(recognizer5)
+        fiveDollarBillSix.addGestureRecognizer(recognizer6)
+        fiveDollarBillSeven.addGestureRecognizer(recognizer7)
+        
+        //this hides ALL UIImageViews when view loads
+        hideFiveDollarBills()
     }
-    
-    
     
     
     //This func sets up the alert at the end of the game giving the user to chance to play again.
@@ -100,8 +98,6 @@ class ViewController: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
-    
     
     
     //This func counts down from 15 and shows the number on the timerLabel.
@@ -118,7 +114,6 @@ class ViewController: UIViewController {
                 image.isHidden = true
             }
             
-            
             //HighScore
             if self.score < self.highScore {
                 self.highScore = self.score
@@ -131,28 +126,17 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
     //this func goes through the fiveDollarBillArray and sets each UIImageView to .isHidden this prevents the user from being able to access them.
-   @objc func hideFiveDollarBills() {
+    @objc func hideFiveDollarBills() {
         for image in fiveDollarBillArray {
             image.isHidden = true
         }
-    if counter < 1 {
-        hideTimer.invalidate()
-        fiveDollarBillArray.randomElement()?.isHidden = true
-    }
+        if counter < 1 {
+            hideTimer.invalidate()
+            fiveDollarBillArray.randomElement()?.isHidden = true
+        }
         fiveDollarBillArray.randomElement()?.isHidden = false
-      
-        
     }
-    
-    
-    
-    
-    
-    
-    
     
     
     //this func decreases your happiness by 5 (because the money is $5) and shows on the happinessLabel
@@ -160,6 +144,5 @@ class ViewController: UIViewController {
         score -= 5
         happinessLabel.text = "Happiness: \(score)"
     }
-
 }
 
