@@ -36,8 +36,17 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        
-        //this will check to see if there is a highscore and present it if so
+        isThereAHighScore()
+        setupViewDidLoad()
+        setupTapGesture()
+        hideFiveDollarBills()
+    }
+}
+
+
+extension ViewController {
+    
+    func isThereAHighScore() {
         if storedHighScore == nil {
             highScore = 0
             highScoreLabel.text = "Highscore: \(highScore)"
@@ -47,7 +56,11 @@ class ViewController: UIViewController {
             highScore = newScore
             highScoreLabel.text = "Highscore: \(highScore)"
         }
-        
+    }
+    
+    
+    //this will check to see if there is a highscore and present it if so
+    func setupViewDidLoad() {
         fiveDollarBillArray =
             [fiveDollarBillOne, fiveDollarBillTwo, fiveDollarBillThree, fiveDollarBillFour, fiveDollarBillFive, fiveDollarBillSix, fiveDollarBillSeven]
         counter = 15
@@ -55,7 +68,10 @@ class ViewController: UIViewController {
         happinessLabel.text = "Happiness: \(score)"
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFunction), userInfo: nil, repeats: true)
         hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(hideFiveDollarBills), userInfo: nil, repeats: true)
-        
+    }
+    
+    
+    func setupTapGesture() {
         //this allows each UIImageView to be tapped.
         fiveDollarBillOne.isUserInteractionEnabled = true
         fiveDollarBillTwo.isUserInteractionEnabled = true
@@ -82,9 +98,6 @@ class ViewController: UIViewController {
         fiveDollarBillFive.addGestureRecognizer(recognizer5)
         fiveDollarBillSix.addGestureRecognizer(recognizer6)
         fiveDollarBillSeven.addGestureRecognizer(recognizer7)
-        
-        //this hides ALL UIImageViews when view loads
-        hideFiveDollarBills()
     }
     
     
@@ -145,4 +158,3 @@ class ViewController: UIViewController {
         happinessLabel.text = "Happiness: \(score)"
     }
 }
-
